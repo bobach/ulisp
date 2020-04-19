@@ -12,6 +12,10 @@ Reasons for this fork:
 * Having the project split across files increases git effectiveness and can increase collaboration.
 * And most importantly this is an learning exercise for me, but feel free to criticize my refactor decisions :) 
 
+Since this repo *will* be harder to develop inside Arduino IDE, I don't know if its mergable with the main project. 
+See [Why are sources in single file](http://www.ulisp.com/show?2ECM)
+
+
 Currently will be only tested on ATmega1284P and ATmega328P. 
 A version of the Lisp programming language for ATmega-based Arduino boards.
 
