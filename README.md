@@ -15,6 +15,13 @@ Reasons for this fork:
 Since this repo *will* be harder to develop inside Arduino IDE, I don't know if its mergable with the main project. 
 See [Why are sources in single file](http://www.ulisp.com/show?2ECM)
 
+#How to try it
+* Install [Arduino-mk](https://github.com/sudar/Arduino-Makefile)
+* Make modifications to Makefile in this project for your board
+* make
+* make upload
+* make monitor
+
 
 Currently will be only tested on ATmega1284P and ATmega328P. 
 A version of the Lisp programming language for ATmega-based Arduino boards.
