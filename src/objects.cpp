@@ -1,6 +1,5 @@
 #include "objects.h"
 #include "alloc.h"
-#include "ulisp/list.h"
 #include "workspace.h"
 #include "function.h"
 
@@ -53,14 +52,6 @@ int checkchar (symbol_t name, object *obj) {
   if (!characterp(obj)) error(name, PSTR("argument is not a character"), obj);
   return obj->integer;
 }
-
-void checkargs (symbol_t name, object *args) {
-  int nargs = listlength(name, args);
-  if (name >= ENDFUNCTIONS) error(0, PSTR("not valid here"), symbol(name));
-  if (nargs<lookupmin(name)) error2(name, PSTR("has too few arguments"));
-  if (nargs>lookupmax(name)) error2(name, PSTR("has too many arguments"));
-}
-
 
 int checkinteger (symbol_t name, object *obj) {
   if (!integerp(obj)) error(name, PSTR("argument is not an integer"), obj);

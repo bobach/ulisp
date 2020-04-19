@@ -16,6 +16,16 @@
 
 char BreakLevel = 0;
 
+int listlength (symbol_t name, object *list) {
+  int length = 0;
+  while (list != NULL) {
+    if (improperp(list)) error2(name, notproper);
+    list = cdr(list);
+    length++;
+  }
+  return length;
+}
+
 object *closure (int tc, symbol_t name, object *state, object *function, object *args, object **env) {
   int trace = 0;
   if (name) trace = tracing(name);
@@ -277,3 +287,11 @@ void repl (object *env) {
     pln(pserial);
   }
 }
+
+void checkargs (symbol_t name, object *args) {
+  int nargs = listlength(name, args);
+  if (name >= ENDFUNCTIONS) error(0, PSTR("not valid here"), symbol(name));
+  if (nargs<lookupmin(name)) error2(name, PSTR("has too few arguments"));
+  if (nargs>lookupmax(name)) error2(name, PSTR("has too many arguments"));
+}
+

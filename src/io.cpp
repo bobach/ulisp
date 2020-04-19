@@ -2,7 +2,6 @@
 #include "error.h"
 #include "function.h"
 #include "gstring.h"
-#include "ulisp/library.h"
 #include "eval.h"
 #include "ulisp/streams.h"
 #include <limits.h>

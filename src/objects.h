@@ -61,8 +61,6 @@ int checkinteger (symbol_t name, object *obj);
 
 int checkchar (symbol_t name, object *obj);
 
-void checkargs (symbol_t name, object *args);
-
 int eq (object *arg1, object *arg2);
 
 bool consp (object *x);

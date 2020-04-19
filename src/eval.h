@@ -9,6 +9,10 @@ extern char BreakLevel;
 
 extern uint8_t End;
 
+int listlength (symbol_t name, object *list);
+
+void checkargs (symbol_t name, object *args);
+
 object *eval (object *form, object *env);
 object *apply (symbol_t name, object *function, object *args, object *env);
 

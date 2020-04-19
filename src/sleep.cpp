@@ -3,8 +3,6 @@
 #include "macros.h"
 #include "function.h"
 
-#include "ulisp/arithmetic.h"
-
 // Sleep
 
 #if !defined(__AVR_ATmega4809__) && !defined(__AVR_ATtiny3216__)

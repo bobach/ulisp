@@ -104,16 +104,6 @@ object *fn_cdddr (object *args, object *env) {
   return cdrx(cdrx(cdrx(first(args))));
 }
 
-int listlength (symbol_t name, object *list) {
-  int length = 0;
-  while (list != NULL) {
-    if (improperp(list)) error2(name, notproper);
-    list = cdr(list);
-    length++;
-  }
-  return length;
-}
-
 object *fn_length (object *args, object *env) {
   (void) env;
   object *arg = first(args);
