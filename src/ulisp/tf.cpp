@@ -5,19 +5,6 @@
 #include "../error.h"
 #include "../flags.h"
 
-// Tail-recursive forms
-object *tf_progn (object *args, object *env) {
-  if (args == NULL) return nil;
-  object *more = cdr(args);
-  while (more != NULL) {
-    object *result = eval(car(args),env);
-    if (tstflag(RETURNFLAG)) return result;
-    args = more;
-    more = cdr(args);
-  }
-  return car(args);
-}
-
 object *tf_if (object *args, object *env) {
   if (args == NULL || cdr(args) == NULL) error2(IF, PSTR("missing argument(s)"));
   if (eval(first(args), env) != nil) return second(args);

@@ -1,4 +1,5 @@
 #include "function.h"
+#include "eval.h"
 #include "ulisp/core.h"
 #include "ulisp/tf.h"
 #include "ulisp/arithmetic.h"

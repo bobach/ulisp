@@ -26,4 +26,6 @@ object **place(symbol_t name, object *args, object *env);
 void repl (object *env);
   
 
+// Tail-recursive forms
+object *tf_progn (object *args, object *env);
 #endif
