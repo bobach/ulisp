@@ -4,7 +4,7 @@
 #include "objects.h"
 #include "io.h"
 
-enum stream { SERIALSTREAM, I2CSTREAM, SPISTREAM, SDSTREAM, BUTTONSTREAM};
+enum stream { SERIALSTREAM, I2CSTREAM, SPISTREAM, SDSTREAM};
 
 void serialbegin (int address, int baud);
 
