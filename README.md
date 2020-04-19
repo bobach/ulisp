@@ -9,7 +9,7 @@ Reasons for this fork:
 * Arduino-mk is pretty amazing
 * Ability to use standard programming tools like gdb, screen for serial comms
 * Since Arduino IDE does a lot of preprocesing for you, you can get away with a lot of non standard C++, that should be changed to proper library format.
-* And most importantly this is an learning excersize for me, but feel free to criticize my refactor decisions :) 
+* And most importantly this is an learning exercise for me, but feel free to criticize my refactor decisions :) 
 
 Currently will be only tested on ATmega1284P and ATmega328P. 
 A version of the Lisp programming language for ATmega-based Arduino boards.
