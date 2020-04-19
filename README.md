@@ -1,10 +1,13 @@
 # uLisp
 This is a fork of uLisp. Goal of this fork is to refactor the project to multiple accesible files and add support for Arduino-mk. 
 
+Basic idea is to split all of the files by use, and try to split hardware handling functions from actual lisp handling functions.
+
 Reasons for this fork:
 * Arduino IDE is terrible and will hold back further development
 * Structured project is a sane way to support multiple architectures
 * Arduino-mk is pretty amazing
+* Since Arduino IDE does a lot of preprocesing for you, you can get away with a lot of non standard C++, that should be changed to proper library format.
 
 Currently will be only tested on ATmega1284P and ATmega328P. 
 
