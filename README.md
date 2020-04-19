@@ -15,7 +15,7 @@ Reasons for this fork:
 Since this repo *will* be harder to develop inside Arduino IDE, I don't know if its mergable with the main project. 
 See [Why are sources in single file](http://www.ulisp.com/show?2ECM)
 
-#How to try it
+## How to try it
 * Install [Arduino-mk](https://github.com/sudar/Arduino-Makefile)
 * Make modifications to Makefile in this project for your board
 * make
