@@ -1,4 +1,4 @@
-# uLisp
+# uLisp - Refactored
 This is a fork of uLisp. Goal of this fork is to refactor the project to multiple accesible files, add support for Arduino-mk, and add commentery.
 
 Basic idea is to split all of the files by use, and try to split hardware handling functions from actual lisp handling functions. 
