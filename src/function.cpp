@@ -13,7 +13,6 @@
 #include "ulisp/number.h"
 #include "ulisp/prettyprint.h"
 #include "ulisp/sp.h"
-#include "ulisp/streams.h"
 #include "ulisp/string.h"
 #include "ulisp/system.h"
 #include "ulisp/tf.h"

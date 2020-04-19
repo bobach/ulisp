@@ -8,7 +8,7 @@
 #include "../io.h"
 #include "list.h"
 #include "../symbol.h"
-#include "streams.h"
+#include "../streams.h"
 #include "../function.h"
 #include "../gstring.h"
 #include "../flags.h"

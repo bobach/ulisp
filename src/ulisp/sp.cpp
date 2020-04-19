@@ -1,5 +1,5 @@
 #include "sp.h"
-#include "streams.h"
+#include "../streams.h"
 #include "tf.h"
 #include "../error.h"
 #include "../tracing.h"

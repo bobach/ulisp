@@ -3,9 +3,9 @@
 #include "function.h"
 #include "gstring.h"
 #include "eval.h"
-#include "ulisp/streams.h"
 #include <limits.h>
 #include "flags.h"
+#include "streams.h"
 
 int digitvalue (char d) {
   if (d>='0' && d<='9') return d-'0';

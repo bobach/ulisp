@@ -4,7 +4,7 @@
 #include "../printers.h"
 #include "../env.h"
 #include "../io.h"
-#include "streams.h"
+#include "../streams.h"
 
 object *fn_pprint (object *args, object *env) {
   (void) env;
